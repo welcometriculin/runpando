@@ -1,0 +1,61 @@
+@media only screen and (max-width:992px)
+{
+.carousel-inner .carousel-caption .intro-heading{font-size: 32px;line-height: 40px;}	
+.h2-hd{font-size: 32px;}
+.sol-sec p{font-size:18px !important;}
+.pic-box-content{top: -41px;}
+.box1 .text-center{font-size: 15px;}
+#carousel-feature-generic .carousel-indicators{bottom: 0;}
+.playstore{width: 120px;height:40px;}
+.carousel-caption{width:69%;}
+.carousel-inner .carousel-caption .intro-heading{font-size: 30px;}
+}
+@media only screen and (max-width:767px)
+{
+.carousel-inner .carousel-caption .intro-heading{font-size: 20px;line-height: 29px;}	
+#slide{padding:30px 0;}	
+.h2-hd{font-size: 28px;}
+.sol-sec p{font-size:16px !important;}
+.pic-box-content{ top: -53px;}
+.pic-box{ width: 16%;}
+.pic-box.wd-lg{ width: 16%;}
+.main{padding:0 0 10px 0;margin:0px 0 0 0;}
+.box{margin:40px 2% 15px;}
+#features{padding:40px 0;}
+section h2.section-heading{font-size:40px;}
+#contact{padding:40px 0;}
+#carousel-feature-generic .carousel-indicators{bottom:-36px;}
+.num{margin:0 40px 0 0;}
+.carousel-caption{width:100%;}
+.carousel-caption{width:62%;}
+.playstore{height: 35px;width: 100px;}
+.carousel-inner .carousel-caption .intro-heading{text-transform: capitalize;}
+}
+@media only screen and (max-width:599px)
+{
+.carousel-caption{left:4%;top:20%;}
+.carousel-inner .carousel-caption .intro-heading{font-size: 17px;line-height: 23px;}
+section h2.section-heading{font-size:30px;}
+.h2-hd {font-size: 20px;    line-height: 26px;padding:0 0 10px 0;}
+.sol-sec p{font-size: 14px !important;}
+.pic-box{width: 26%;}	
+.pic-box.wd-lg{width: 26%;}
+.carousel-inner .item .col-sm-7 h3{font-size: 20px;    line-height: 26px;}
+.carousel-inner .item .col-sm-7 p{font-size: 14px;}
+section h2.section-heading{font-size: 23px;}
+.pull-center{float: none !important;}
+.contact-content{width:206px;margin: 50px auto 0;}
+.contact-content .col-xs-12{margin:0 0 10px 0;}
+#solutions p{text-align: justify;}
+.playstore{height:19px;width:55px;}
+.carousel-caption{width:96%;}
+}
+@media only screen and (max-width:479px)
+{
+section h2.section-heading{font-size: 20px;}
+.carousel-indicators{bottom:0;}	
+.pic-box-content{top:-47px;}
+.box{margin:40px 5% 15px;}
+.carousel-caption{width: 70%;}
+.carousel-inner .carousel-caption .intro-heading{font-size: 14px;}
+}

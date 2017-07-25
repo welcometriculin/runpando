@@ -1,0 +1,9 @@
+RewriteEngine on
+ 
+# If a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Otherwise forward it to index.php
+RewriteRule . index.php
+php_value post_max_size 20M
+php_value upload_max_filesize 20M

@@ -1,0 +1,10 @@
+<?php
+
+/*return [
+    'adminEmail' => 'admin@example.com',
+];*/
+return [
+'adminEmail' => 'saichand.koduri@raybiztech.com',
+'fromEmail' => 'AKIAINQSJTFKGMNUO72A',
+'sessionTimeoutSeconds' =>'1440',
+];

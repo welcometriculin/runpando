@@ -1,0 +1,206 @@
+@media only screen and (max-width:992px)
+{
+.carousel-inner .carousel-caption .intro-heading{font-size: 32px;line-height: 40px;}	
+.h2-hd{font-size: 32px;}
+.sol-sec p{font-size:18px !important;}
+.pic-box-content{top: -41px;}
+.box1 .text-center{font-size: 15px;}
+#carousel-feature-generic .carousel-indicators{bottom: 0;}
+.playstore{width: 120px;height:40px;}
+.carousel-caption{width:69%;}
+.carousel-inner .carousel-caption .intro-heading{font-size: 30px;}
+.box .text-justify{text-align: left !important;}
+.dashboard .graph .table-bordered th{ text-align:center;}
+.dashboard .table-bordered td > span,.dashboard .graph .table-bordered td, .dashboard .table-bordered th > span{float:none !important; text-align:center;}
+.dashboard .graph .table-bordered th p, .dashboard .graph .table-bordered td p{ display:block;margin: 0 0 5px 0;}
+.box_1{ height: 100px;}
+.mble_btm {padding-bottom: 40px;}
+}
+@media only screen and (max-width:767px)
+{
+	body.bg-grad { /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#42296d+0,42296d+9,42296d+68,c9865b+100 */
+background: #42296d; /* Old browsers */
+background: -moz-linear-gradient(top,  #42296d 0%, #42296d 9%, #42296d 68%, #c9865b 100%); /* FF3.6-15 */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#42296d), color-stop(9%,#42296d), color-stop(68%,#42296d), color-stop(100%,#c9865b)); /* Chrome4-9,Safari4-5 */
+background: -webkit-linear-gradient(top,  #42296d 0%,#42296d 9%,#42296d 68%,#c9865b 100%); /* Chrome10-25,Safari5.1-6 */
+background: -o-linear-gradient(top,  #42296d 0%,#42296d 9%,#42296d 68%,#c9865b 100%); /* Opera 11.10-11.50 */
+background: -ms-linear-gradient(top,  #42296d 0%,#42296d 9%,#42296d 68%,#c9865b 100%); /* IE10 preview */
+background: linear-gradient(to bottom,  #42296d 0%,#42296d 9%,#42296d 68%,#c9865b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42296d', endColorstr='#c9865b',GradientType=0 ); /* IE6-9 */   
+}
+.field-crops-crop_name .help-block, .field-products-product_name .help-block{ display:inline;}
+.carousel-inner .carousel-caption .intro-heading{font-size: 20px;line-height: 29px;}	
+#slide{padding:30px 0;}	
+.h2-hd{font-size: 28px;}
+.sol-sec p{font-size:16px !important;}
+.pic-box-content{ top: -53px;}
+.pic-box{ width: 16%;}
+.pic-box.wd-lg{ width: 16%;}
+.main{padding:0 0 10px 0;margin:0px 0 0 0;}
+.box{margin:40px 2% 15px;}
+#features{padding:40px 0;}
+section h2.section-heading{font-size:40px;}
+#contact{padding:40px 0;}
+#carousel-feature-generic .carousel-indicators{bottom:-36px;}
+.num{margin:0 40px 0 0;}
+.carousel-caption{width:100%;}
+.playstore{height: 35px;width: 100px;}
+.carousel-inner .carousel-caption .intro-heading{text-transform: capitalize;}
+.edit_vilage_btns .btn{ margin:0 !important;}
+.edit_vilage_btns{ padding:0 !important;}
+.edit_patern_btns{ padding:0;}
+.travel-block .col-sm-4 .form-group .text-center, .travel-block .col-sm-4 .form-group .text-right{ text-align:left !important; }
+.travel-block .col-sm-4 .form-group{ margin:0;}
+.bg .footer { text-align:center;}
+.bg .footer .copyright, .bg .footer .social-buttons{ padding:0 0 15px 0; display:block;}
+.bg-grad .footer { text-align:center;}
+.bg-grad .footer .copyright, .bg-grad .footer .social-buttons{ padding:0 0 15px 0; display:block;}
+.orange-text{ text-align:left; padding-top:10px;}
+.forgot_psw { width:100%;}
+/*19-july-2016 start*/
+/*.con-bg {padding-bottom: 120px;}*/
+/*19-july-2016 start*/
+.label_frm .form-group{ padding-bottom:7px; margin-bottom: 0;}
+.label_frm .form-group .control-input{ padding-top:0; color:#c6753d;padding-top: 0;}
+.field-userssearch-free_text_search label{ padding:0 0 0 5px;}
+.field-userssearch-free_text_search .pl0{ padding-left:5px;}
+.label_frm .cmpy_details{ padding:0;}
+.sub-activity-create .col-md-3, .sub-activity-create .form-group { padding:0; margin:0;}
+ .sub-activity-create .btn-primary{ margin:0 !important;}
+ #CompanyProfile #accordion .label_frm .pull-left{ padding:0; float:none !important;}
+ 
+ #performance-content #month, #performance-content #year{ margin-top:0px !important;}
+ .channel-partners-form .form-group .help-block, .villages-form .form-group .help-block{ margin-left:0;}
+ .channel-partners-form .form-group .form-group, .villages-form .form-group .form-group{ margin:0;}
+ .channel-partners-form .form-group label, .villages-form .form-group label{ padding:0;}
+}
+
+@media only screen and (max-width:599px)
+{
+.carousel-inner .carousel-caption .intro-heading{font-size: 17px;line-height: 23px;}
+section h2.section-heading{font-size:30px;}
+.h2-hd {font-size: 20px;    line-height: 26px;padding:0 0 10px 0;}
+.sol-sec p{font-size: 14px !important;}
+.pic-box{width: 26%;}	
+.pic-box.wd-lg{width: 26%;}
+.carousel-inner .item .col-sm-7 h3{font-size: 20px;line-height: 26px;}
+.carousel-inner .item .col-sm-7 p{font-size: 14px;}
+section h2.section-heading{font-size: 23px;}
+.pull-center{float: none !important;}
+#solutions p{text-align: justify;}
+.playstore{height:19px;width:55px;}
+.carousel-caption{width:100%;left:0;b1199pxottom:0;}
+.min-side, #sidebar-left{ left:-50px;}
+.min-cont{margin-left: 0 !important;}
+.sidebar-minified #sidebar-left.minified { left:0;}
+.sidebar-minified #content.sidebar-minified{margin-left: 50px !important;}
+.travel-log-search{ padding-left:0;padding-right:0;}
+.padd_zero{ padding:0 !important;}
+.sidebar-nav > ul{  margin: 0 -11px;}
+#performance-content li a span{ padding:0 !important;}
+/*-- 05/07/2016 start --*/
+.btn{display: block;margin: 0 auto 12px; width:100%; float: none !important;}
+.panel-body .btn-primary, .panel-body .btn-info, .panel-body .btn-danger{ margin: 0 auto 12px auto !important;}
+.build_btn_main{ float: none !important;}
+.build_btn_main .btn{ width:100%;}
+.bulkfile_main, .bulkfile_temp { float: none !important;}
+.browse-form .form-group { display: block; float: none !important; margin: 0 auto !important; width:80%;}
+.bulkfile_temp.pull-right{ float: none !important;}
+.bulkfile_temp .btn{ margin: 0 auto 12px auto !important;}
+.modal-footer .btn + .btn { margin: 0 auto !important;}
+.bulkfile_temp.pull-right .pull-left, .bulkfile_temp.pull-right .pull-right{ float: none !important;}
+.btn_excel span{ text-align:center;margin: 0 0 8px;}
+.crp_edit .btn.btn-primary.m0 { margin: 0 auto !important;}
+.sub-activity-update .crp_edit .edit_sub_btn{ margin:0 auto !important;}
+.input-companies-index .pull-right{ float: none !important;} 
+ #year, #month{ width:100% !important;} 
+ .field-userssearch-free_text_search .pl0{ padding-left:0;}  
+ .channel-partners-search .col-sm-4{ padding:0;}
+ .plan-cards-search .form-group, .travel-log-search .form-group{ padding:0;}
+ 
+ /*.form_mobile .control-label{ width:auto; display:inline-block;}
+ .form_mobile .control-input{ width:auto; display:inline-block;padding-left:0;}
+ .form_mobile .ctrl_mail{ width:100%; display:inline-block; padding:0 15px;}*/
+ .villages-form .col-md-offset-2 , .channel-partners-form .col-md-offset-2{padding:0}
+ .sub-activity-update .col-md-3{ padding:0;}
+ .bulk-upload-mr0 ,.custom-upload-button {float: none !important;}
+ .bulk_upload_button {width: 100%}
+ .sub-activity-create .btn-danger,.sub-activity-update .btn-danger{margin-top:0 !important;}
+ .panel-body .sub-activity-create .btn-primary  ,.panel-body .sub-activity-update .btn-primary {
+  margin: 0 0 15px !important;
+}
+/*-- 05/07/2016 end --*/
+}
+@media only screen and (max-width:479px)
+{
+section h2.section-heading{font-size: 20px;}
+.carousel-indicators{bottom:0;}	
+.pic-box-content{top:-47px;}
+.box{margin:40px 5% 15px;}
+.carousel-caption{width:100%;left:0;}
+.carousel-inner .carousel-caption .intro-heading{font-size: 14px;}
+.welcome span { display: inline-block; overflow: hidden; text-overflow: ellipsis; width: 45px;margin: 0 0 0 6px; float:right;}
+.welcome {  padding: 15px 12px;}
+.home-fs .fa.fa-home{ padding:13px;}
+.plan-cards-search{ padding-left:0;padding-right:0;}
+.nav > li > a{ padding:10px;}
+.icn_padd { height: 50px; padding: 17px 11px !important;}
+.bulkfile_main .bulkfile_btn { display: block; float: none;}
+.btn_excel .pull-left { float:none !important; margin:0 0 10px 0;}
+.btn_excel .pull-right{ float:none !important;}
+.mbl_padd{ padding:0;}
+.mbl_padd .btn{margin: 0 0 9px !important; padding: 6px 11px; width: 100%;}
+.login-box, .register-box{ box-sizing: border-box;margin: 0 auto;width: 100%;}
+.login-box .group-addon-form{ padding:0;}
+.bulkfile_browes, .bulkfile_browes input{ width:200px;}
+.forgot_psw .form-control{ font-size:10px;}
+.plan-cards-form .btn{ width:100%; margin-top:0 !important;margin-left:0 !important; margin-bottom: 10px;}
+input[type="file"]{ width:195px;}
+/*-- 05/07/2016 start --*/
+.btn{width:100%;}
+.browse-form .form-group{ width:100%;}
+input[type="file"]{ font-size: 12px;}
+.bulkfile_browes .help-block{ font-size:12px;}
+/*-- 05/07/2016 start --*/
+.total-distance{width:auto !important;}
+}
+
+
+@media only screen and (max-width: 1023px){
+	.channel-partners-search .col-sm-4{ padding-left:0;}
+	.channel-partners-search .form-group .btn-primary, .channel-partners-search .form-group .btn-danger{ margin-top:0 !important;}
+	.plan-cards-index table .fa{ padding:0 3px;}
+	.bulkfile_temp { float:left !important; padding:0 15px;}
+	/*.bulkfile_temp .btn{ margin: 0 0 7px 0 !important;}*/
+	#CompanyProfile .listview > button{ position:static;}
+	.mrg_btn{ margin:25px 0 !important;}
+	.sub-activity-update .edit_sub_btn{ margin:0px 0 0 13px !important}
+	.edit_vilage_btns{ padding:0 10px;}
+	.edit_vilage_btns .btn{ margin-top:0 !important;}
+	.btn_excel{ margin:0 0 20px 0;}
+	.contact-content{width:238px;margin: 50px auto 0;}
+    .contact-content .col-xs-12{margitopn:0 0 10px 0;}
+    .act-name{display:none;}
+    #performance-content li a span { padding-right: 0;}
+    .mble_btm{ padding-bottom:30px;}
+    
+    .dashboard .farmers .panel-heading{ padding:15px 0; font-size:15px;}
+	#performance-content #users-employee{ width:100%;}
+	#performance-content #month, #performance-content #year{ margin-top:23px;}
+	.sub-activity-create .btn-primary{margin:0 auto !important; display:block;}
+	.crp_edit .edit_sub_btn{ margin:0 auto !important; display:block;}
+	#year, #month { padding-left: 0; padding-right: 0; width: 62px;}
+	.alg_center{ text-align: center;}
+	.edit_vilage_btns .form-group, .edit_dpatern_btns .form-group{  text-align: center;}
+	#fgm_crops .lagends{ margin:0;}
+	.sub-activity-create .btn-danger,.sub-activity-update .btn-danger{margin-top:0 !important;}
+}
+
+@media only screen and (max-width: 1122px){
+	.creat_frm .form-control{ font-size:12px;}
+	#performance-content li a span { font-siz4e: 12px; padding-right: 6px;}
+	.nav > li > a{ padding:7px;}
+	#performance-content .all-crop-prdt{ height: 49px !important;}
+}
+
+

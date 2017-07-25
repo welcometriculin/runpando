@@ -1,0 +1,36 @@
+Current Year - Travelled distance
+SELECT SUM( distance_travelled ) , MONTH(  `planned_date` ) FROM  `plan_cards` WHERE YEAR(  `planned_date` ) =$current_year AND assign_to ='$user_id' and status ='submitted' GROUP BY MONTH(  `planned_date` ) ;
+
+Current Month - Travelled distance
+SELECT SUM( distance_travelled ) , DAY(  `planned_date` ) FROM  `plan_cards` WHERE MONTH(  `planned_date` )=$current_month AND assign_to ='$user_id' and status ='submitted' GROUP BY DAY(  `planned_date` ) ;
+
+
+
+Current Year - Travelled distance
+SELECT assign_to as user_id, MONTH(  `planned_date` ), SUM( distance_travelled )  FROM  `plan_cards` WHERE YEAR(  `planned_date` ) =$current_year AND assign_to ='$user_id' and status ='submitted' GROUP BY assign_to, MONTH(  `planned_date` ) ;
+
+Current Month - Travelled distance
+SELECT assign_to, SUM( distance_travelled ) , DAY(  `planned_date` ) FROM  `plan_cards` WHERE MONTH(  `planned_date` )=$current_month and status ='submitted' GROUP BY assign_to, DAY(  `planned_date` ) ;
+
+SELECT  `reporting_user_id` as user_id , GROUP_CONCAT(  `id` ) as reporting_users
+FROM  `users` 
+WHERE  `reporting_user_id` !=  ''
+GROUP BY  `reporting_user_id` order by roleid desc ;
+
+foreach($result as $user){
+//SELECT sum(`total_distance`) as total_distance,`month`,`year` FROM `year_travellog` WHERE user_id in ($reporting_users) group by year, month;
+
+replace  INTO year_travellog (`user_id`,`month`, `year`, total_distance)  select $user_id , `month`,`year`, sum(`total_distance`) FROM `year_travellog` WHERE user_id in ($reporting_users) group by year, month 
+
+}
+
+ALTER TABLE  `year_travellog` ADD UNIQUE (
+`year` ,
+`month` ,
+user_id
+)
+
+
+Backup ==========
+
+SELECT `assign_to`, count(`id`) as `planed cards`,`activity`,`crop_name` FROM `plan_cards` WHERE `activity` != 'Channel Card' and year(updated_date)=$current_year  and month(updated_date)=$current_month group by `assign_to`,`activity`,`crop_name`

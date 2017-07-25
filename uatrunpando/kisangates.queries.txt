@@ -1,0 +1,121 @@
+2016   Yearly - Total campaigns
+===============================
+SELECT `user_id`, `month`, sum(`total`) as campaign  FROM `crop_wise_yearly_activity_summary` where month=2 and year=2016 group by `user_id`,`month`
+
+ALTER TABLE  `tmp_crop_wise_yearly_activity_summary` ADD UNIQUE (
+`user_id` , year , month, crop_name);
+
+
+CREATE TABLE IF NOT EXISTS `product_wise_yearly_activity_summary` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `demo` int(10) unsigned NOT NULL,
+  `fgm` int(10) unsigned NOT NULL,
+  `mc` int(10) unsigned NOT NULL,
+  `fhv` int(10) unsigned NOT NULL,
+  `total` int(10) unsigned NOT NULL,
+  `month` int(10) NOT NULL,
+  `year` year(4) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ;
+
+CREATE TABLE IF NOT EXISTS `village_wise_yearly_activity_summary` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `village_name` varchar(100) NOT NULL,
+  `demo` int(10) unsigned NOT NULL,
+  `fgm` int(10) unsigned NOT NULL,
+  `mc` int(10) unsigned NOT NULL,
+  `fhv` int(10) unsigned NOT NULL,
+  `total` int(10) unsigned NOT NULL,
+  `month` int(10) NOT NULL,
+  `year` year(4) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ;
+
+CREATE TABLE IF NOT EXISTS `tmp_product_wise_yearly_activity_summary` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `demo` int(10) unsigned NOT NULL,
+  `fgm` int(10) unsigned NOT NULL,
+  `mc` int(10) unsigned NOT NULL,
+  `fhv` int(10) unsigned NOT NULL,
+  `total` int(10) unsigned NOT NULL,
+  `month` int(10) unsigned NOT NULL,
+  `year` year(4) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`,`year`,`month`,`product_name`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tmp_crop_wise_monthly_activity_summary` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `crop_name` varchar(100) NOT NULL,
+  `demo` int(10) unsigned NOT NULL,
+  `fgm` int(10) unsigned NOT NULL,
+  `mc` int(10) unsigned NOT NULL,
+  `fhv` int(10) unsigned NOT NULL,
+  `total` int(10) unsigned NOT NULL,
+  `month` int(10) unsigned NOT NULL,
+  `day` int(10) unsigned NOT NULL,
+  `year` year(4) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`,`year`,`month`,`day`,`crop_name`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tmp_village_wise_yearly_activity_summary` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `village_name` varchar(100) NOT NULL,
+  `demo` int(10) unsigned NOT NULL,
+  `fgm` int(10) unsigned NOT NULL,
+  `mc` int(10) unsigned NOT NULL,
+  `fhv` int(10) unsigned NOT NULL,
+  `total` int(10) unsigned NOT NULL,
+  `month` int(10) unsigned NOT NULL,
+  `year` year(4) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`,`year`,`month`,`village_name`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tmp_product_wise_monthly_activity_summary` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `demo` int(10) unsigned NOT NULL,
+  `fgm` int(10) unsigned NOT NULL,
+  `mc` int(10) unsigned NOT NULL,
+  `fhv` int(10) unsigned NOT NULL,
+  `total` int(10) unsigned NOT NULL,
+  `month` int(10) unsigned NOT NULL,
+  `day` int(10) unsigned NOT NULL,
+  `year` year(4) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`,`year`,`month`,`day`,`product_name`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `tmp_village_wise_monthly_activity_summary` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `village_name` varchar(100) NOT NULL,
+  `demo` int(10) unsigned NOT NULL,
+  `fgm` int(10) unsigned NOT NULL,
+  `mc` int(10) unsigned NOT NULL,
+  `fhv` int(10) unsigned NOT NULL,
+  `total` int(10) unsigned NOT NULL,
+  `month` int(10) unsigned NOT NULL,
+  `day` int(10) unsigned NOT NULL,
+  `year` year(4) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id` (`user_id`,`year`,`month`,`day`,`village_name`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+ALTER TABLE  `village_wise_monthly_activity_summary` ADD  `year` YEAR NOT NULL;
+ALTER TABLE  `crop_wise_monthly_activity_summary` ADD  `year` YEAR NOT NULL;
+ALTER TABLE  `product_wise_monthly_activity_summary` ADD  `year` YEAR NOT NULL;
